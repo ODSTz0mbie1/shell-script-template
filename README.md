@@ -8,10 +8,10 @@ The `argparse` module makes it easy to write user-friendly command-line interfac
 
 ### Installing the Alias
 
-You can use the provided `install.bash` script to create an alias for running the script more easily.
+You can use the provided `install.sh` script to create an alias for running the script more easily.
 
 ```sh
-./install.bash
+./install.sh
 ```
 
 This will add an alias to your `~/.bash_profile` so you can run the script using the `pytest` command:
