@@ -13,13 +13,13 @@ The `argparse` module makes it easy to write user-friendly command-line interfac
 Add the alias to your `~/.bash_profile` or `~/.bashrc`:
 
 ```sh
-echo "alias pyscript='/usr/bin/python3 $(pwd)/main.py'" >> ~/.bash_profile
+echo "alias pyscript='/usr/bin/python3 $(pwd)/pyscript.py'" >> ~/.bash_profile
 ```
 
 OR
 
 ```sh
-echo "alias pyscript='/usr/bin/python3 $(pwd)/main.py'" >> ~/.bashrc
+echo "alias pyscript='/usr/bin/python3 $(pwd)/pyscript.py'" >> ~/.bashrc
 ```
 
 Make sure to reload your profile to apply the changes:
@@ -37,7 +37,7 @@ source ~/.bashrc
 Add the alias to your `~/.zshrc`:
 
 ```sh
-echo "alias pyscript='/usr/bin/python3 $(pwd)/main.py'" >> ~/.zshrc
+echo "alias pyscript='/usr/bin/python3 $(pwd)/pyscript.py'" >> ~/.zshrc
 ```
 
 Make sure to reload your profile to apply the changes:
@@ -51,7 +51,7 @@ source ~/.zshrc
 Add the alias to your PowerShell profile:
 
 ```sh
-Add-Content -Path $PROFILE -Value "function pyscript { & 'C:\Path\To\Python\python.exe' '$(pwd)\main.py' @args }"
+Add-Content -Path $PROFILE -Value "function pyscript { & 'C:\Path\To\Python\python.exe' '$(pwd)\pyscript.py' @args }"
 ```
 
 Make sure to reload your profile to apply the changes:
@@ -66,7 +66,7 @@ Create a batch file named pyscript.bat in a directory that is included in your P
 
 ```sh
 @echo off
-C:\Path\To\Python\python.exe %~dp0\main.py %*
+C:\Path\To\Python\python.exe %~dp0\pyscript.py %*
 ```
 
 This will add an alias to your shell profile so you can run the script using the `pyscript` command.
